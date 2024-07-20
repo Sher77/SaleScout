@@ -47,6 +47,10 @@
 
 .phone {
   margin-right: 30px;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
 
 .logout {
@@ -64,6 +68,11 @@
   &:hover,
   &:focus {
     background-color: lighten($color-main, 35%);
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 5px 10px;
+    margin-left: 0;
   }
 }
 
