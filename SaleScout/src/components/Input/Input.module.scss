@@ -1,0 +1,36 @@
+@import '../../assets/scss/variables';
+
+.inputWrap {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 20px 15px;
+  font-size: $fs-2xs;
+  color: #6c7e8f;
+  background-color: $color-inputbg;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid $color-inputbg;
+  transition: border 0.3s ease-in-out;
+
+  &::placeholder {
+    color: $color-input;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-main;
+  }
+}
+
+.svg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

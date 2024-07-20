@@ -1,0 +1,25 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.btn {
+  @include btnReset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 0;
+  font-size: $fs-xs;
+  font-weight: 600;
+  color: $color-white;
+  background-color: $color-main;
+  border: 2px solid $color-main;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $color-main;
+    background-color: transparent;
+  }
+}
