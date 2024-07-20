@@ -43,7 +43,10 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post(`${API_URL}/api/login`, formData);
+      const response = await axios.post(
+        `${API_URL}/api/registration`,
+        formData
+      );
       setFormData({
         ...formData,
         name: '',
@@ -120,7 +123,7 @@ const Register = () => {
               />
             </label>
             {error && <div className={styles.error}>{error}</div>}
-            <Button type="submit">Войти</Button>
+            <Button type="submit">Зарегистрироваться</Button>
             <p className={styles.noaccount}>
               <span>Есть аккаунт?</span>
               <Link to="/login">Войти</Link>
