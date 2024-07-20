@@ -18,7 +18,7 @@ import InputPassword from '../../components/InputPassword/InputPassword';
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = 'https://sale-scout-server.vercel.app';
 
   const [error, setError] = React.useState();
   const [formData, setFormData] = React.useState({
