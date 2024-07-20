@@ -14,7 +14,7 @@ import LangDropdown from '../../components/LangDropdown/LangDropdown';
 import styles from './Login.module.scss';
 
 const Login = () => {
-  const API_URL = 'https://sale-scout-server.vercel.app';
+  const API_URL = import.meta.env.VITE_API_URL;
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
